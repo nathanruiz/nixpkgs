@@ -2385,6 +2385,8 @@ with pkgs;
     inherit (darwin.apple_sdk.frameworks) Accelerate;
   };
 
+  kamal = callPackage ../tools/misc/kamal { };
+
   klaus = with python3Packages; toPythonApplication klaus;
 
   klipper = callPackage ../servers/klipper { };
